@@ -11,6 +11,8 @@ function stringSplitter(string, separator) {
   return output;
 }
 
+// If separator is not included in string, linear time O(n).  If separator is included in string, polynomial time O(n^k) where k = number of occurrences of separator.
+
 console.log(stringSplitter('02/20/2020', '/'))
 console.log(stringSplitter('This is a test string', ' '))
 console.log(stringSplitter('This is a test string', ','))

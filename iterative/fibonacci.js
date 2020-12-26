@@ -1,13 +1,3 @@
-// function fibonacci(n) {
-//   if (n === 2) {
-//     return [1, 1];
-//   } else {
-//     let sequence = fibonacci(n - 1);
-//     sequence.push(sequence[sequence.length - 1] + sequence[sequence.length - 2]);
-//     return sequence;
-//   }
-// }
-
 function fibonacci(n) {
   let sequence = [];
   for (let i = 0; i < n; i++) {
@@ -20,6 +10,8 @@ function fibonacci(n) {
   }
   return sequence;
 }
+
+// Linear time O(n).
 
 console.log(fibonacci(3))
 console.log(fibonacci(4))

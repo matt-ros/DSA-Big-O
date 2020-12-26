@@ -1,12 +1,12 @@
 function factorial(n) {
-  let total = 1;
-  for (let i = n; i > 0; i--) {
-    total *= i;
+  if (n === 1) {
+    return 1;
   }
-  return total;
+
+  return n * factorial(n - 1);
 }
 
-// Linear time O(n).
+// Linear time O(n)
 
 console.log(factorial(5));
 console.log(factorial(4));

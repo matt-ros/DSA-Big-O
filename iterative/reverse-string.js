@@ -6,4 +6,6 @@ function reverseString(string) {
   return output;
 }
 
+// Linear time O(n).
+
 console.log(reverseString('Hello, World!'))

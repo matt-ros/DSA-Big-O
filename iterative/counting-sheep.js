@@ -7,4 +7,6 @@ function countSheep(sheep) {
   console.log('All sheep jumped over the fence');
 }
 
+// Linear time O(n).
+
 countSheep(5)

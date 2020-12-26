@@ -1,9 +1,8 @@
 function nthTriangularNumber(n) {
-  let triNum = 0;
-  for (let i = 1; i <= n; i++) {
-    triNum += i;
+  if (n === 1) {
+    return 1;
   }
-  return triNum;
+  return nthTriangularNumber(n - 1) + n;
 }
 
 // Linear time O(n).

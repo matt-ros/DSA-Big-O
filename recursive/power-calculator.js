@@ -2,12 +2,13 @@ function powerCalculator(base, exp) {
   if (exp < 0) {
     return 'exponent should be >= 0';
   }
-
-  let total = 1;
-  for (let i = 0; i < exp; i++) {
-    total *= base;
+  if (exp === 0) {
+    return 1;
   }
-  return total;
+  if (exp === 1) {
+    return base;
+  }
+  return base * powerCalculator(base, exp - 1);
 }
 
 // Linear time O(n).
